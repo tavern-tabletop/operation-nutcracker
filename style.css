@@ -1,0 +1,219 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Courier New', monospace;
+    background-color: #f9f6f0;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 2rem;
+  }
+
+  .logo {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+    
+  /* Page-specific classes */
+  .landing {
+    background-image: url("assets/bg-forest.png");
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .mission {
+    background-image: url("assets/bg-forest.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+
+  .mission::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  /* MISSION STORY */
+  .lead-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .lead-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .lead-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .lead-card span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffe9c4;
+  }
+  
+  /* AGENT BYTE'S PUZZLE PAGE*/
+  .puzzle-box {
+    background: rgba(255,255,255,0.05);
+    border: 2px dashed #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .hint {
+    font-style: italic;
+    color: #ffeead;
+    margin-bottom: 1rem;
+  }
+  
+  .choice-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .story-beat a.btn-next {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  /* Buttons */
+  .btn-start, .btn-next {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    background: #8c5e35;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-start:hover, .btn-next:hover {
+    background: #a37349;
+  }
+
+  /* AGENT FILES - DOESSIER */
+  .agents-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  .agent-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .agent-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .agent-name {
+    margin-bottom: 0.5rem;
+  }
+  
+  .reveal-btn {
+    background: #8c5e35;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .agent-info {
+    margin-top: 1rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .agent-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* REPLAY */
+  .replay-button {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .replay-button .btn-next {
+    background-color: #6d4c41;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  /* FOOTER */
+
+  .site-footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 0.9rem;
+    border-top: 2px solid #fff;
+  }
+  
+  .kofi-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #29abe0;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .kofi-button:hover {
+    background-color: #1d8bb5;
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slightly Cracked Ending</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mission">
+  <header>
+    <h2>🪵 Slightly Cracked Ending</h2>
+  </header>
+
+  <section class="story-beat">
+    <p>You solved the cipher and stopped the heist... but the traitor got away.</p>
+    <p>There’s still tension at HQ. Trust takes time to rebuild.</p>
+    <blockquote><em>"You did good work," says Nutboss. "But we’ve still got shadows in the trees."</em></blockquote>
+    <p>Byte upgrades the HQ firewall. Hazel starts sleeping with one eye open. The mission’s not over — just on pause.</p>
+    <p>You’re still a hero... just one with unfinished business.</p>
+  </section>
+
+  <div class="back-button">
+    <a href="index.html" class="btn-next">🏡 Return to Start</a>
+  </div>
+
+  <div class="replay-button">
+    <button onclick="resetGame()" class="btn-next">🔄 Play Again</button>
+  </div>
+
+  <script>
+    function resetGame() {
+      // Optional: clear session data if you added any
+      sessionStorage.clear();
+  
+      // Go back to start
+      window.location.href = "index.html";
+    }
+  </script>  
+  
+  <footer class="site-footer">
+    <p>🐿️ Made by <strong> Tavern Tabletop</strong> – aka Alison Holloway</p>
+    <a href="https://ko-fi.com/taverntabletop" target="_blank" class="kofi-button">
+      💖 Support the Mission
+    </a>
+    <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.8;">© 2025 Tavern Tabletop. All rights reserved.</p>
+  </footer>
+</body>
+</html>

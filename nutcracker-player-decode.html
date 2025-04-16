@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decode the Nutcracker Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mission">
+  <header>
+    <h2>🧠 Final Puzzle: Decode the Cipher</h2>
+  </header>
+
+  <section class="story-beat">
+    <p>The acorn reveals a scrambled tail-signal:</p>
+    <p><strong>🌲🌲➡️🌳➡️🍂➡️🐾➡️❓</strong></p>
+    <p>It’s a single password — 8 letters, no spaces. You’ve seen clues pointing to it before. Byte stands back and lets you take the lead.</p>
+  </section>
+
+  <section class="puzzle-box">
+    <form id="puzzleForm">
+      <label for="cipherInput">Enter the decoded word:</label><br />
+      <input type="text" id="cipherInput" name="cipherInput" placeholder="Type here..." maxlength="12">
+      <br />
+      <button type="submit" class="btn-next" style="margin-top: 1rem;">Submit</button>
+    </form>
+
+    <p id="resultMsg" style="margin-top:1rem; font-weight: bold;"></p>
+  </section>
+
+  <div class="back-button">
+    <a href="mission.html" class="btn-next">⬅️ Return to Briefing</a>
+  </div>
+
+  <script>
+    const form = document.getElementById('puzzleForm');
+    const resultMsg = document.getElementById('resultMsg');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const input = document.getElementById('cipherInput').value.trim().toUpperCase();
+
+      if (input === "NUTVAULT") {
+        window.location.href = "traitor-choice.html"; // move to next phase
+      } else {
+        resultMsg.textContent = "❌ Incorrect. That doesn’t match the tailcode.";
+      }
+    });
+  </script>
+</body>
+</html>

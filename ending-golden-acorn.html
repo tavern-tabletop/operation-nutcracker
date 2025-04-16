@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Acorn Ending</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mission">
+  <header>
+    <h2>🌟 Golden Acorn Ending</h2>
+  </header>
+
+  <section class="story-beat">
+    <p>You solved the cipher, unmasked the traitor, and saved the Great Oak’s entire nut stash.</p>
+    <p>Hazel salutes you. Chatter starts crying (again). Even Byte fist-bumps you with a little acorn-drone.</p>
+    <blockquote><em>"You didn’t just crack the code," says Nutboss. "You cracked the conspiracy."</em></blockquote>
+    <p>Later that night, The Acorn Underground throws you a celebratory tailspin dance party under the stars.</p>
+    <p>You're a legend now, Agent. The forest will whisper your codename for seasons to come.</p>
+  </section>
+
+  <div class="back-button">
+    <a href="index.html" class="btn-next">🏡 Return to Start</a>
+  </div>
+
+  <div class="replay-button">
+    <button onclick="resetGame()" class="btn-next">🔄 Play Again</button>
+  </div>
+
+  <script>
+    function resetGame() {
+      // Optional: clear session data if you added any
+      sessionStorage.clear();
+  
+      // Go back to start
+      window.location.href = "index.html";
+    }
+  </script>
+  
+  <footer class="site-footer">
+    <p>🐿️ Made by <strong> Tavern Tabletop</strong> – aka Alison Holloway</p>
+    <a href="https://ko-fi.com/taverntabletop" target="_blank" class="kofi-button">
+      💖 Support the Mission
+    </a>
+    <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.8;">© 2025 Tavern Tabletop. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
